@@ -1,8 +1,15 @@
 <template>
   <div class="container">
     <h1 class="teks">
-    BISAAAAA DONGGGGGGGG
+    Ternyata harus ditambahhin build di nuxt.config.js
   </h1>
+  <code>
+    build: {
+    extend(config) {
+      config.resolve.alias['node-fetch-native'] = require.resolve('node-fetch')
+    }
+  },
+  </code>
   </div>
 </template>
 
